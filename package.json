@@ -24,6 +24,11 @@
     "collectCoverageFrom": [
       "app/**/*.{js,jsx,ts,tsx}"
     ],
+    "moduleNameMapper": {
+      "\\.(ejs)$": "<rootDir>/shim.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/shim.js",
+      "\\.(css|scss|less)$": "<rootDir>/shim.js"
+    },
     "testMatch": [
       "**/?(*.)(spec|test).js?(x)"
     ]
